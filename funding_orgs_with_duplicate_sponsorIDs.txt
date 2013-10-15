@@ -1,0 +1,6 @@
+SELECT ?x ?id WHERE
+{
+?x a foaf:Organization .
+?x ufVivo:sponsorID ?id .
+}
+GROUP BY ?id
