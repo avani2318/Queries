@@ -1,0 +1,6 @@
+SELECT ?x COUNT(?y)  WHERE
+{
+?x a vivo:Grant .
+?x vivo:grantAwardedBy ?y .
+}
+GROUP BY ?x
