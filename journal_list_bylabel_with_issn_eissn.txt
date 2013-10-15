@@ -1,0 +1,9 @@
+#journal cleanup
+
+SELECT DISTINCT ?x ?label ?issn ?eissn WHERE
+{
+?x a bibo:Journal .
+OPTIONAL {?x rdfs:label ?label .}
+OPTIONAL {?x bibo:issn ?issn .}
+OPTIONAL {?x bibo:eissn ?eissn .}
+}
