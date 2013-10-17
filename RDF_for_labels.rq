@@ -1,0 +1,10 @@
+CONSTRUCT{
+
+<http://vivo.ufl.edu/individual/n49110> rdfs:label ?label
+
+}
+ WHERE {
+
+<http://vivo.ufl.edu/individual/n49110> rdfs:label ?label
+
+}
