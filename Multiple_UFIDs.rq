@@ -1,0 +1,11 @@
+SELECT ?c_x ?ufid WHERE
+{
+{
+select (COUNT(?x) as ?c_x) ?ufid where
+{
+?x ufVivo:ufid ?ufid .
+}
+GROUP BY ?ufid
+}
+FILTER (?c_x > 1)
+}
