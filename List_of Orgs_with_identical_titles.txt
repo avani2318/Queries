@@ -1,6 +1,0 @@
-SELECT ?uri ?label WHERE
-{
-?uri rdf:type foaf:Organization .
-?uri rdfs:label ?label .
-}
-GROUP BY ?label
