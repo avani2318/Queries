@@ -1,0 +1,6 @@
+SELECT * WHERE
+{
+?x a foaf:Organization .
+OPTIONAL {?x rdfs:label ?label .}
+FILTER (!BOUND(?label))
+}
