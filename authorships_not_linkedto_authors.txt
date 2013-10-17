@@ -1,6 +1,6 @@
 query to find authorships that are not linked to authors
 
-PREFIX vivo: http://vivoweb.org/ontology/core#
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
 SELECT ?x
 WHERE
 {
