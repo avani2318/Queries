@@ -1,0 +1,9 @@
+query to find authorships that are not linked to authors
+
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
+SELECT ?x
+WHERE
+{
+?x a vivo:Authorship .
+FILTER NOT EXISTS {?x vivo:linkedAuthor ?z }
+}
